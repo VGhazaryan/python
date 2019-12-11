@@ -1,0 +1,12 @@
+word = 'test'
+print(word.capitalize())
+print(word.count('t'))
+print(word.endswith('t'))
+print(word.startswith('t'))
+print(word.find('t'))
+print(word.index('t'))
+print(word.isalnum())
+print(word.isalpha())
+print(word.islower())
+print(word.join(word))
+print(word.upper())
