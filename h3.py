@@ -1,17 +1,10 @@
 import re
-import datetime
+from string_util_homework import string_util
 
 file = open('text.txt')
 allDates = []
+checkDate = string_util.checkDate
 
-def checkDate(date):
-    isDate = True
-    day, month, year = date.split('/')
-    try:
-        datetime.datetime(int(year), int(month), int(day))
-    except ValueError:
-        isDate = False
-    return isDate
 
 for i in file:
     dates = re.findall(r"[\d]{1,2}/[\d]{1,2}/[\d]{4}", i)
